@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+:root {
+  --color-blue: #335FFF;
+  --color-yellow: #FFC21A;
+  --color-blue-dark: #3E4D65;
+  --color-white: #F1F1F1;
+  --color-black: #191919;
+
+  --max-content-width: calc(100vw / 12 * 8);
+
+  --step--1: clamp(0.6769rem, 0.5935rem + 0.4169vw, 1.0938rem);
+  --step-0: clamp(0.8125rem, 0.7125rem + 0.5vw, 1.3125rem);
+  --step-1: clamp(0.975rem, 0.855rem + 0.6vw, 1.575rem);
+  --step-2: clamp(1.17rem, 1.026rem + 0.72vw, 1.89rem);
+  --step-3: clamp(1.4038rem, 1.2309rem + 0.8644vw, 2.2681rem);
+  --step-4: clamp(1.685rem, 1.4776rem + 1.0369vw, 2.7219rem);
+  --step-5: clamp(2.0219rem, 1.7731rem + 1.2438vw, 3.2656rem);
+  --step-6: clamp(2.4263rem, 2.1276rem + 1.4931vw, 3.9194rem);
+  --step-7: clamp(2.9113rem, 2.5529rem + 1.7919vw, 4.7031rem);
+  --step-8: clamp(3.4938rem, 3.0637rem + 2.15vw, 5.6438rem);
+  --step-9: clamp(4.1925rem, 3.6765rem + 2.58vw, 6.7725rem);
+  --step-10: clamp(5.0306rem, 4.4114rem + 3.0963vw, 8.1269rem);
+  --step-11: clamp(5.4524rem, 4.7813rem + 3.3559vw, 8.8083rem);
+  --step-12: clamp(5.8742rem, 5.1512rem + 3.6156vw, 9.4898rem);
+  --step-13: clamp(6.2960rem, 5.5211rem + 3.8752vw, 10.1712rem);
+  --step-14: clamp(6.7178rem, 5.8910rem + 4.1348vw, 10.8527rem);
+  --step-15: clamp(7.1396rem, 6.2609rem + 4.3944vw, 11.5341rem);
+}
+
+html {
+  font-size: 62.5%;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: var(--color-white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 { // Big Title
+  font: 800 var(--step-15) 'Manrope' !important;
+  line-height: calc(var(--step-15) * 1.5) !important;
+}
+
+h2 { // Title
+  font: 800 var(--step-8) 'Manrope' !important;
+  line-height: calc(var(--step-8) * 1.5) !important;
+}
+
+h3 { // SubTitle
+  font: 800 var(--step-7) 'Manrope' !important;
+  line-height: calc(var(--step-7) * 1.5) !important;
+}
+
+h4 { // event title
+  font: 800 var(--step-4) 'Manrope' !important;
+  line-height: calc(var(--step-4) * 1.5) !important;
+}
+
+h5 { // buttons
+  font: 600 var(--step-4) 'Manrope' !important;
+  line-height: calc(var(--step-4) * 1.5) !important;
+}
+
+h6 { // info
+  font: 600 var(--step-1) 'Manrope' !important;
+  line-height: calc(var(--step-1) * 1.5) !important;
+}
+
+p {
+  font: 400 var(--step-4) 'Manrope' !important;
+  line-height: calc(var(--step-4) * 1.5) !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--color-black);
+}
