@@ -3,4 +3,20 @@
   min-height: 100%;
   background-color: var(--color-grey-2);
   border-radius: 2rem;
+
+  .imgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 1rem;
+
+    .image {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .contentContainer {
+    margin-left: 2.5rem;
+  }
 }
