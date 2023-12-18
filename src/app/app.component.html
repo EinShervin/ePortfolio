@@ -1,10 +1,17 @@
 <div class="container">
-    <div class="navContainer">
+    <div class="contentContainer">
         <div class="nav">
             <app-nav></app-nav>
         </div>
-    </div>
-    <div class="contentSlider">
-        <app-content-slider [contentList]="contentList" (selectionChange)="changeSelection($event)"></app-content-slider>
+        <div class="content">
+            <app-content [active]="getActive()"></app-content>
+        </div>
+        <div class="contentSlider">
+            <app-content-slider [contentList]="contentList"
+                                (selectionChange)="changeSelection($event)">
+            </app-content-slider>
+        </div>
     </div>
 </div>
+
+

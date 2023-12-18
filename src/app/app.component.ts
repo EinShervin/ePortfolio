@@ -54,4 +54,8 @@ export class AppComponent {
         this.contentList.forEach((content: Content) => content.active = false);
         content.active = true;
     }
+
+    getActive(): Content {
+        return this.contentList.find((content: Content) => content.active)!;
+    }
 }

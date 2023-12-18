@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Content} from "../../../helper/classes/Content";
 
 @Component({
   selector: 'app-content',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent {
-
+  @Input() active!: Content;
 }

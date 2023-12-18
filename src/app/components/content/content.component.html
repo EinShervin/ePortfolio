@@ -1,12 +1,12 @@
 <div class="content">
     <div class="imgContainer">
-        <img src="" alt="" class="image">
+        <img [src]="active.src" alt="" class="image">
     </div>
     <div class="contentContainer">
         <div class="text">
-            <h3>Title</h3>
-            <p>Text</p>
+            <h3>{{ active.title }}</h3>
+            <p>{{ active.message }}</p>
         </div>
-        <button>Weiter</button>
+        <button>Weiter -></button>
     </div>
 </div>
