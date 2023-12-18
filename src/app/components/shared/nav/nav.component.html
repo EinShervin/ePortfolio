@@ -1,14 +1,14 @@
 <nav class="nav">
-    <object type="image/svg+xml" data="assets/logo/animated.svg" class="logo" draggable="false" alt="Logo">Your browser
-        does not support SVG
+    <object type="image/svg+xml" data="assets/logo/animated.svg" class="logo" draggable="false">
+        Your browser does not support SVG
     </object>
     <div class="elements">
-        <div class="element" *ngFor="let element of elements">
-            <h5>{{ element }}</h5>
+        <div class="element" *ngFor="let element of elements" [ngClass]="{'active': activeElement === element}">
+            <h4 class="hoverable">{{ element }}</h4>
         </div>
     </div>
-    <div class="mode">
-        <img src="" alt="" class="icon">
-        <h5>Lightmode</h5>
+    <div class="mode" (click)="switchMode()">
+        <img [src]="getCurrentModeSrc()" alt="" class="icon">
+        <h6 class="modename">{{ getCurrentMode() }}</h6>
     </div>
 </nav>
