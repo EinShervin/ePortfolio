@@ -22,10 +22,15 @@
     .element {
       padding: .5rem 1rem;
       border-radius: 1rem;
-      transition: background-color .3s;
+      transition: background-color .3s, color .3s;
+      cursor: pointer;
 
       &:hover {
         background-color: var(--color-black);
+
+        h4 {
+          color: var(--color-yellow);
+        }
       }
 
       &.active {

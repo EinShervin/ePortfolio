@@ -4,7 +4,7 @@
     </object>
     <div class="elements">
         <div class="element" *ngFor="let element of elements" [ngClass]="{'active': activeElement === element}">
-            <h4 class="hoverable">{{ element }}</h4>
+            <h4>{{ element }}</h4>
         </div>
     </div>
     <div class="mode" (click)="switchMode()">
