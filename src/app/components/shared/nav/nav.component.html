@@ -3,12 +3,12 @@
         Your browser does not support SVG
     </object>
     <div class="elements">
-        <div class="element" *ngFor="let element of elements">
-            <h5>{{ element }}</h5>
+        <div class="element" *ngFor="let element of elements" [ngClass]="{'active': activeElement === element}">
+            <h4 class="hoverable">{{ element }}</h4>
         </div>
     </div>
-    <div class="mode">
+    <div class="mode" (click)="switchMode()">
         <img [src]="getCurrentModeSrc()" alt="" class="icon">
-        <h5 class="modename">Lightmode</h5>
+        <h6 class="modename">{{ getCurrentMode() }}</h6>
     </div>
 </nav>

@@ -7,6 +7,7 @@
   --color-white: #F1F1F1;
   --color-black: #191919;
   --color-grey-1: #E5E5E5;
+  --color-grey-2: #B0B0B0;
 
   --max-content-width: calc(100vw / 12 * 8);
 
@@ -86,4 +87,13 @@ p {
 
 h1, h2, h3, h4, h5, h6, p {
   color: var(--color-black);
+}
+
+.hoverable {
+  transition: color .3s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-yellow);
+  }
 }
