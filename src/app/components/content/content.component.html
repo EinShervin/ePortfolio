@@ -7,6 +7,6 @@
             <h3>{{ active.title }}</h3>
             <p>{{ active.message }}</p>
         </div>
-        <button>Weiter -></button>
+        <button (click)="contentChange.emit(active)">Weiter -></button>
     </div>
 </div>

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Content} from "../helper/classes/Content";
+import {last} from "rxjs";
 
 @Component({
     selector: 'app-root',
@@ -13,35 +14,35 @@ export class AppComponent {
     getContentList(): Content[] {
         return [
             {
-                title: '',
+                title: 'Shervin',
                 message: '',
                 src: '',
                 isVideo: false,
                 active: true
             },
             {
-                title: '',
+                title: 'Alisha',
                 message: '',
                 src: '',
                 isVideo: false,
                 active: false
             },
             {
-                title: '',
+                title: 'Anja',
                 message: '',
                 src: '',
                 isVideo: false,
                 active: false
             },
             {
-                title: '',
+                title: 'ANDRE',
                 message: '',
                 src: '',
                 isVideo: false,
                 active: false
             },
             {
-                title: '',
+                title: 'Rasco',
                 message: '',
                 src: '',
                 isVideo: false,
@@ -57,5 +58,22 @@ export class AppComponent {
 
     getActive(): Content {
         return this.contentList.find((content: Content) => content.active)!;
+    }
+
+    nextSelection(): void {
+        const lastActive: Content | undefined = this.contentList.find((content: Content) => content.active);
+        if (!lastActive) {
+            return;
+        }
+        lastActive.active = false;
+        const index: number = this.contentList.indexOf(lastActive);
+        if (index === -1) {
+            return;
+        }
+        if (index + 1 >= this.contentList.length) {
+            this.contentList.at(0)!.active = true;
+            return;
+        }
+        this.contentList.at(index + 1)!.active = true;
     }
 }

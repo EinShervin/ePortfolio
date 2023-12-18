@@ -4,7 +4,7 @@
             <app-nav></app-nav>
         </div>
         <div class="content">
-            <app-content [active]="getActive()"></app-content>
+            <app-content [active]="getActive()" (contentChange)="nextSelection()"></app-content>
         </div>
         <div class="contentSlider">
             <app-content-slider [contentList]="contentList"
