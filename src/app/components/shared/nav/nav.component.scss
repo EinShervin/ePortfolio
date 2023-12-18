@@ -1,17 +1,41 @@
 .nav {
   display: flex;
+  align-items: center;
   width: var(--max-content-width);
-  height: 10rem;
+  height: 7rem;
+  padding: 0 1rem;
+  box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+  border-radius: 1.5rem;
 
   .logo {
     height: 100%;
+    transform: scale(3);
+    padding: 0 3rem;
   }
 
   .elements {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
   }
 
   .mode {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-grey-1);
+    border-radius: 1rem;
+    height: 5rem;
+    padding: 0 1.5rem;
 
+    .icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      margin-right: 1rem;
+    }
+
+    .modename {
+
+    }
   }
 }

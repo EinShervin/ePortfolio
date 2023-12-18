@@ -1,6 +1,6 @@
 <nav class="nav">
-    <object type="image/svg+xml" data="assets/logo/animated.svg" class="logo" draggable="false" alt="Logo">Your browser
-        does not support SVG
+    <object type="image/svg+xml" data="assets/logo/animated.svg" class="logo" draggable="false">
+        Your browser does not support SVG
     </object>
     <div class="elements">
         <div class="element" *ngFor="let element of elements">
@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="mode">
-        <img src="" alt="" class="icon">
-        <h5>Lightmode</h5>
+        <img [src]="getCurrentModeSrc()" alt="" class="icon">
+        <h5 class="modename">Lightmode</h5>
     </div>
 </nav>
