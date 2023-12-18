@@ -4,4 +4,7 @@
             <app-nav></app-nav>
         </div>
     </div>
+    <div class="contentSlider">
+        <app-content-slider [contentList]="contentList" (selectionChange)="changeSelection($event)"></app-content-slider>
+    </div>
 </div>

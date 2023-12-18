@@ -1,0 +1,5 @@
+<div class="slider">
+    <div class="point" *ngFor="let content of contentList" (click)="changeSelection(content)">
+        <div class="innerPoint" [ngClass]="{'active': content.active}"></div>
+    </div>
+</div>

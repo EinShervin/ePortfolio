@@ -1,6 +1,7 @@
 .container {
   height: 100vh;
   width: 100vw;
+  position: relative;
 
   .navContainer {
     display: flex;
@@ -12,5 +13,11 @@
       position: absolute;
       top: 5rem;
     }
+  }
+
+  .contentSlider {
+    position: absolute;
+    left: calc((100vw - var(--max-content-width)) / 2);
+    bottom: 5rem;
   }
 }

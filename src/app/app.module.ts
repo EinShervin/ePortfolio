@@ -3,11 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {NavComponent} from "./components/shared/nav/nav.component";
+import { ContentSliderComponent } from './components/content-slider/content-slider.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    ContentSliderComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule
