@@ -1,8 +1,15 @@
 .content {
+  display: flex;
   min-width: var(--max-content-width);
   min-height: 100%;
   background-color: var(--color-grey-2);
   border-radius: 2rem;
+  padding: 2.5rem;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   .imgContainer {
     width: 50%;
@@ -18,5 +25,9 @@
 
   .contentContainer {
     margin-left: 2.5rem;
+
+    @media screen and (max-width: 700px) {
+      margin-left: 0;
+    }
   }
 }
