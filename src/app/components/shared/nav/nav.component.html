@@ -4,7 +4,7 @@
     </object>
     <div class="elements">
         <div class="element" *ngFor="let element of contents"
-             [ngClass]="{'active': activeElement === element}"
+             [ngClass]="{'active': active === element}"
              (click)="change.emit(element)">
             <h4>{{ element.title }}</h4>
         </div>
@@ -13,4 +13,13 @@
         <img [src]="getCurrentModeSrc()" alt="" class="icon">
         <h6 class="modename">{{ getCurrentMode() }}</h6>
     </div>
+    <div class="burger" (click)="toggleBurger()" [ngClass]="{'active': isBurgerActive}">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
 </nav>
+<app-open-nav [contents]="contents"
+              [active]="active"
+              [activeNav]="isBurgerActive"
+              (change)="change.emit($event); toggleBurger()"></app-open-nav>

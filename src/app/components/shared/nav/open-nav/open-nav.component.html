@@ -1,0 +1,5 @@
+<div class="container" [ngClass]="{'active': isNavActive}">
+    <div class="points">
+        <h2 class="hoverable" *ngFor="let content of contents" (click)="goTo(content)">{{ content.title }}</h2>
+    </div>
+</div>

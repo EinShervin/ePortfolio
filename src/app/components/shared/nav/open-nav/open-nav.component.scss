@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80vw;
+  height: 50vh;
+  position: fixed;
+  overflow-x: hidden;
+  inset: 0;
+  left: 100vw;
+  top: 15rem;
+  z-index: 5;
+  background-color: var(--color-white);
+  transition: left .6s, transform .6s;
+  border-radius: 5rem;
+  box-shadow: rgba(50, 50, 93, .25) 0 13px 27px -5px, rgba(0, 0, 0, .3) 0 8px 16px -8px;
+
+  .points {
+    text-align: end;
+    margin-right: 10vw;
+    margin-bottom: 3.5rem;
+  }
+
+  @media screen and (max-width: 475px) {
+    justify-content: center;
+
+    .points {
+      margin-right: 0;
+    }
+  }
+
+  &.active {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

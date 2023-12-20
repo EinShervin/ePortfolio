@@ -9,15 +9,11 @@ import {Content} from "../../../../helper/classes/Content";
 })
 export class NavComponent {
     @Input() contents!: Content[];
-
-    @Input() set active(content: Content) {
-        this.activeElement = content;
-    }
-
+    @Input() active!: Content;
     @Output() change: EventEmitter<Content> = new EventEmitter<Content>();
     public elements: string[] = Constants.Sites.SITES;
+    public isBurgerActive: boolean = false;
     private mode: 'light' | 'dark' = 'dark';
-    public activeElement!: Content;
 
     public getCurrentModeSrc(): string {
         const base: string = 'assets/icons/mode/'
@@ -36,5 +32,9 @@ export class NavComponent {
 
     public switchMode(): void {
         this.mode = this.mode === 'light' ? 'dark' : 'light';
+    }
+
+    public toggleBurger(): void {
+        this.isBurgerActive = !this.isBurgerActive;
     }
 }

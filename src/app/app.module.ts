@@ -6,6 +6,7 @@ import {NavComponent} from "./components/shared/nav/nav.component";
 import { ContentSliderComponent } from './components/content-slider/content-slider.component';
 import { ContentComponent } from './components/content/content.component';
 import { ButtonComponent } from './components/shared/button/button.component';
+import { OpenNavComponent } from './components/shared/nav/open-nav/open-nav.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ButtonComponent } from './components/shared/button/button.component';
     NavComponent,
     ContentSliderComponent,
     ContentComponent,
-    ButtonComponent
+    ButtonComponent,
+    OpenNavComponent
   ],
   imports: [
     BrowserModule
