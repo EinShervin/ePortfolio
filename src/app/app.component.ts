@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Content} from "../helper/classes/Content";
-import {last} from "rxjs";
+import {Constants} from "../helper/classes/Constants";
 
 @Component({
     selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent {
     title: string = 'ePortfolio';
     contentList: Content[] = this.getContentList();
 
-    getContentList(): Content[] {
+    private getContentList(): Content[] {
         return [
             {
                 title: 'Shervin',
@@ -28,21 +28,7 @@ export class AppComponent {
                 active: false
             },
             {
-                title: 'Anja',
-                message: '',
-                src: '',
-                isVideo: false,
-                active: false
-            },
-            {
-                title: 'ANDRE',
-                message: '',
-                src: '',
-                isVideo: false,
-                active: false
-            },
-            {
-                title: 'Rasco',
+                title: Constants.Sites.LANGUAGES,
                 message: '',
                 src: '',
                 isVideo: false,
@@ -52,11 +38,15 @@ export class AppComponent {
     }
 
     changeSelection(content: Content): void {
+        console.log('Alle deaktivieren');
         this.contentList.forEach((content: Content) => content.active = false);
+        console.log('aktivieren');
         content.active = true;
+        console.log('fertig');
     }
 
     getActive(): Content {
+        console.log(this.contentList);
         return this.contentList.find((content: Content) => content.active)!;
     }
 

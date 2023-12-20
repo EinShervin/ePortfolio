@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Constants} from "../../../../helper/classes/Constants";
+import {Content} from "../../../../helper/classes/Content";
 
 @Component({
     selector: 'app-nav',
@@ -7,9 +8,16 @@ import {Constants} from "../../../../helper/classes/Constants";
     styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
+    @Input() contents!: Content[];
+
+    @Input() set active(content: Content) {
+        this.activeElement = content;
+    }
+
+    @Output() change: EventEmitter<Content> = new EventEmitter<Content>();
     public elements: string[] = Constants.Sites.SITES;
     private mode: 'light' | 'dark' = 'dark';
-    public activeElement: string = Constants.Sites.HOME;
+    public activeElement!: Content;
 
     public getCurrentModeSrc(): string {
         const base: string = 'assets/icons/mode/'

@@ -3,8 +3,10 @@
         Your browser does not support SVG
     </object>
     <div class="elements">
-        <div class="element" *ngFor="let element of elements" [ngClass]="{'active': activeElement === element}">
-            <h4>{{ element }}</h4>
+        <div class="element" *ngFor="let element of contents"
+             [ngClass]="{'active': activeElement === element}"
+             (click)="change.emit(element)">
+            <h4>{{ element.title }}</h4>
         </div>
     </div>
     <div class="mode" (click)="switchMode()">

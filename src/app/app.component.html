@@ -1,10 +1,13 @@
 <div class="container">
     <div class="contentContainer">
         <div class="nav">
-            <app-nav></app-nav>
+            <app-nav [contents]="contentList"
+                     [active]="getActive()"
+                     (change)="changeSelection($event)"></app-nav>
         </div>
         <div class="content">
-            <app-content [active]="getActive()" (contentChange)="nextSelection()"></app-content>
+            <app-content [active]="getActive()"
+                         (contentChange)="nextSelection()"></app-content>
         </div>
         <div class="contentSlider">
             <app-content-slider [contentList]="contentList"
