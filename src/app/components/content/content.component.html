@@ -7,6 +7,6 @@
             <h3>{{ active.title }}</h3>
             <p>{{ active.message }}</p>
         </div>
-        <button (click)="contentChange.emit(active)">Weiter -></button>
+        <app-button text="Weiter ->" (buttonClick)="contentChange.emit()"></app-button>
     </div>
 </div>
