@@ -38,15 +38,11 @@ export class AppComponent {
     }
 
     changeSelection(content: Content): void {
-        console.log('Alle deaktivieren');
         this.contentList.forEach((content: Content) => content.active = false);
-        console.log('aktivieren');
         content.active = true;
-        console.log('fertig');
     }
 
     getActive(): Content {
-        console.log(this.contentList);
         return this.contentList.find((content: Content) => content.active)!;
     }
 

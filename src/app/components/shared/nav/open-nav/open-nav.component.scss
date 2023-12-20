@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 80vw;
+  width: max(var(--max-content-width), 80vw);
   height: 50vh;
   position: fixed;
   overflow-x: hidden;

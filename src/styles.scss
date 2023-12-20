@@ -11,6 +11,10 @@
 
   --max-content-width: calc(100vw / 12 * 8);
 
+  @media screen and (max-width: 1000px) {
+    --max-content-width: calc(100vw / 12 * 10);
+  }
+
   --step--1: clamp(0.6769rem, 0.5935rem + 0.4169vw, 1.0938rem);
   --step-0: clamp(0.8125rem, 0.7125rem + 0.5vw, 1.3125rem);
   --step-1: clamp(0.975rem, 0.855rem + 0.6vw, 1.575rem);
