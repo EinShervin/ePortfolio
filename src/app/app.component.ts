@@ -14,24 +14,31 @@ export class AppComponent {
     private getContentList(): Content[] {
         return [
             {
-                title: 'Shervin',
+                title: Constants.Sites.COLOR,
                 message: '',
-                src: '',
+                src: '/assets/images/erstes-final.png',
                 isVideo: false,
                 active: true
             },
             {
-                title: 'Alisha',
+                title: Constants.Sites.CURVE,
                 message: '',
-                src: '',
+                src: '/assets/images/zweites-final.jpg',
                 isVideo: false,
                 active: false
             },
             {
-                title: Constants.Sites.LANGUAGES,
+                title: Constants.Sites.PIXEL,
+                message: '',
+                src: '/assets/images/dritte-final.png',
+                isVideo: false,
+                active: false
+            },
+            {
+                title: Constants.Sites.VIDEO,
                 message: '',
                 src: '',
-                isVideo: false,
+                isVideo: true,
                 active: false
             }
         ];
