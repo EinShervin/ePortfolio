@@ -16,21 +16,21 @@ export class AppComponent {
             {
                 title: Constants.Sites.COLOR,
                 message: 'Bei der ersten Bildänderung möchte ich den Methodenaufruf «toString», der sich links von meinem Cursor in der Mitte des Bildes befindet, in der gleichen grünen Farbe wie die anderen Methodenaufrufe einfärben.',
-                src: '/assets/images/erstes-final.png',
+                src: '/2023/ina4a/gruppe14/assets/images/erstes-final.png',
                 isVideo: false,
                 active: true
             },
             {
                 title: Constants.Sites.CURVE,
                 message: 'Ich möchte die Farben etwas kräftiger machen und den Kontrast erhöhen, aber nicht so extrem, dass das Bild bearbeitet aussieht, eher dezent.',
-                src: '/assets/images/zweites-final.jpg',
+                src: '/2023/ina4a/gruppe14/assets/images/zweites-final.jpg',
                 isVideo: false,
                 active: false
             },
             {
                 title: Constants.Sites.PIXEL,
                 message: 'Wir Informatiker arbeiten mit Programmcode, der sehr sensibel sein kann. Deshalb möchte ich auf dem folgenden Bild meinen Bildschirm verpixeln, damit man den Programmcode nicht mehr lesen kann.',
-                src: '/assets/images/dritte-final.png',
+                src: '/2023/ina4a/gruppe14/assets/images/dritte-final.png',
                 isVideo: false,
                 active: false
             },
