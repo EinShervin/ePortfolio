@@ -37,7 +37,7 @@ export class AppComponent {
             {
                 title: Constants.Sites.VIDEO,
                 message: 'In diesem Video zeige ich, wie man sich den Alltag eines Informatikers vorstellt und wie er sein sollte. Frühstücken, trainieren und dann programmieren.',
-                src: '/assets/video/Sequenz 01.mp4',
+                src: '',
                 isVideo: true,
                 active: false
             }
