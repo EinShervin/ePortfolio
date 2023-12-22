@@ -15,7 +15,7 @@ export class AppComponent {
         return [
             {
                 title: Constants.Sites.COLOR,
-                message: 'Bei der ersten Bildänderung möchte ich den Methodenaufruf «toString», der sich links von meinem Cursor in der Mitte des Bildes befindet, in der gleichen grünen Farbe wie die anderen Methodenaufrufe einfärben. Aus dem einfachen Grund, dass nicht jeder sehen soll, dass ich dort eigentlich unnötigen Code geschrieben habe und ich nicht dumm dastehen möchte.',
+                message: 'Bei der ersten Bildänderung möchte ich den Methodenaufruf «toString», der sich links von meinem Cursor in der Mitte des Bildes befindet, in der gleichen grünen Farbe wie die anderen Methodenaufrufe einfärben.',
                 src: '/assets/images/erstes-final.png',
                 isVideo: false,
                 active: true
