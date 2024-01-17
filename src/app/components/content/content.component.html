@@ -1,12 +1,15 @@
 <div class="content">
     <div class="imgContainer">
-        <img [src]="active.src" draggable="false" class="image">
+        <img *ngIf="!active.isVideo" [src]="active.src" draggable="false" class="lookable">
+        <div *ngIf="active.isVideo" class="lookable">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DweNlYWcXVM?si=kP6zdhkRLecQ976n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
     <div class="contentContainer">
         <div class="text">
             <h3>{{ active.title }}</h3>
             <p>{{ active.message }}</p>
         </div>
-        <app-button text="Weiter ->" (buttonClick)="contentChange.emit()"></app-button>
+        <app-button class="button" text="Weiter ->" (buttonClick)="contentChange.emit()"></app-button>
     </div>
 </div>

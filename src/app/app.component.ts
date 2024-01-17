@@ -15,28 +15,28 @@ export class AppComponent {
         return [
             {
                 title: Constants.Sites.COLOR,
-                message: '',
-                src: '/assets/images/erstes-final.png',
+                message: 'Bei der ersten Bildänderung möchte ich den Methodenaufruf «toString», der sich links von meinem Cursor in der Mitte des Bildes befindet, in der gleichen grünen Farbe wie die anderen Methodenaufrufe einfärben.',
+                src: '/2023/ina4a/gruppe14/assets/images/erstes-final.png',
                 isVideo: false,
                 active: true
             },
             {
                 title: Constants.Sites.CURVE,
-                message: '',
-                src: '/assets/images/zweites-final.jpg',
+                message: 'Ich möchte die Farben etwas kräftiger machen und den Kontrast erhöhen, aber nicht so extrem, dass das Bild bearbeitet aussieht, eher dezent.',
+                src: '/2023/ina4a/gruppe14/assets/images/zweites-final.jpg',
                 isVideo: false,
                 active: false
             },
             {
                 title: Constants.Sites.PIXEL,
-                message: '',
-                src: '/assets/images/dritte-final.png',
+                message: 'Wir Informatiker arbeiten mit Programmcode, der sehr sensibel sein kann. Deshalb möchte ich auf dem folgenden Bild meinen Bildschirm verpixeln, damit man den Programmcode nicht mehr lesen kann.',
+                src: '/2023/ina4a/gruppe14/assets/images/dritte-final.png',
                 isVideo: false,
                 active: false
             },
             {
                 title: Constants.Sites.VIDEO,
-                message: '',
+                message: 'In diesem Video zeige ich, wie man sich den Alltag eines Informatikers vorstellt und wie er sein sollte. Frühstücken, trainieren und dann programmieren.',
                 src: '',
                 isVideo: true,
                 active: false
