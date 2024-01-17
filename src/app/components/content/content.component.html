@@ -1,6 +1,7 @@
 <div class="content">
     <div class="imgContainer">
-        <img [src]="active.src" draggable="false" class="image">
+        <img *ngIf="!active.isVideo" [src]="active.src" draggable="false" class="lookable">
+        <video *ngIf="active.isVideo" [src]="active.src" autoplay class="lookable"></video>
     </div>
     <div class="contentContainer">
         <div class="text">
